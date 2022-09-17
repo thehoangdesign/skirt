@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login/Register</title>
+	<link rel="shortcut icon" href="pic/shortcut.svg">
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/all.css">
+	<link rel="stylesheet" type="text/css" href="css/aos.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.default.min.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/style_format.css">
+	<link rel="stylesheet" type="text/css" href="css/style_login.css">
+
+	<script type="text/javascript" src="js/all.js"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/popper.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+	<div class="container-fluid contentcontainer p-0">
+		<div class="login">
+			<div class="widthcotainer">
+				<div class="logo">
+					<a href="">
+						<img src="pic/Logo2.svg" width="150px">
+					</a>
+				</div>
+				<h3>Let's Skrt!!</h3>
+				<div class="form">
+					<input type="text" required="required" name="login" autocomplete="off">
+					<span><p>Email or Phone Number</p></span>
+				</div>
+				<div class="form">
+					<input type="password" required="required" name="login">
+					<span><p>Password</p></span>
+				</div>
+				<div class="forgot">
+					<a href="">
+						<p>Forgot password!</p>
+					</a>
+				</div>
+				<button class="btncta_green1">
+					<p>Sign In</p>
+				</button>
+				<p class="social">Or sign in-up with social method</p>
+				<div class="signinmethod">
+					<a href=""><i class="fab fa-google"></i></a>
+					<a href=""><i class="fab fa-facebook-f"></i></a>
+					<a href=""><i class="fab fa-instagram"></i></a>
+					<a href=""><i class="fab fa-twitter"></i></a>
+				</div>
+			</div>
+		</div>
+		
+
+		<div class="register">
+			<div class="widthcotainer">
+				<div class="logo">
+					<a href="">
+						<img src="pic/Logo2.svg" width="150px">
+					</a>
+				</div>
+				<h3>Let's Skrt!!</h3>
+				<div class="form">
+					<input type="text" required="required" name="login" autocomplete="off">
+					<span><p>User name</p></span>
+				</div>
+
+				<div class="form">
+					<input type="text" required="required" name="login" autocomplete="off">
+					<span><p>Email or Phone Number</p></span>
+				</div>
+				<div class="form">
+					<input type="password" required="required" name="login">
+					<span><p>Password</p></span>
+				</div>
+				<div class="rememberpassword">
+					<label for="rememberbox" class="ml-auto">
+						<input type="checkbox" name="remember" id="rememberbox">
+						<span class="rememberbox ml-auto"><p>Remember Password</p></span>
+					</label>
+				</div>
+				<button class="btncta_green1">
+					<p>Sign Up</p>
+				</button>
+				<p class="social">Or sign in-up with social method</p>
+				<div class="signinmethod">
+					<a href=""><i class="fab fa-google"></i></a>
+					<a href=""><i class="fab fa-facebook-f"></i></a>
+					<a href=""><i class="fab fa-instagram"></i></a>
+					<a href=""><i class="fab fa-twitter"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="background">
+		<div class="switchcontainer">
+			<div class="signcontainer signup">
+				<h2>Welcome!</h2>
+				<button class="btncta_black1" id="signUp">
+					<p>Sign Up</p>
+				</button>
+			</div>
+			<div class="signcontainer signin">
+				<h2>Welcome Back!</h2>
+				<button class="btncta_black1" id="signIn">
+					<p>Sign In</p>
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		document.getElementById('signIn').onclick = function() {
+			$(".signin").hide();
+			$(".signup").show();
+		};
+		document.getElementById('signUp').onclick = function() {
+			$(".signup").hide();
+			$(".signin").show();
+		};
+		$("document").ready(function(){
+			$("#signUp").click(function(){
+				$(".switchcontainer").css('left', '0%');
+			});
+			$("#signIn").click(function(){
+				$(".switchcontainer").css('left', '50%');
+			});
+		});
+	</script>
+</body>
+</html>
